@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int x1,x2,v1,v2,mod,mod1,final;
+	int x = 0;
+	printf("Masukan posisi 1 dan kecepatan 1: ");
+	scanf("%d%d",&x1,&v1);
+	printf("Masukan posisi 2 dan kecepatan 2: ");
+	scanf("%d%d",&x2,&v2);
+	mod = x1-x2;
+	mod1= v1-v2;
+	if((v1>v2&&x1<x2)||(v1<v2&&x1>x2)){
+	if(abs(mod)%abs(mod1)== 0){
+		printf("YES");
+	}
+	else printf("NO");
+}
+	else if(x1==x2&&v1==v2) printf("YES");
+	else printf("NO");
+	return 0;
+}
